@@ -119,3 +119,25 @@ pre, code {
   border-bottom: 1px solid #777777;
 }
 
+
+
+ /* Estilo do botão fixo */
+    #voltarTopo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 20px;
+      background-color: #3C492F; /* #3C492F, #7C896F */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: none; /* escondido por padrão */
+      z-index: 1000;
+    }
+
+    #voltarTopo:hover {
+      background-color: #0056b3;
+    }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>List Data Tools</title>
+    <title>Book</title>
     <link href="data/estilo.css" media="screen" rel="stylesheet" type="text/css">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	
@@ -19,6 +19,18 @@
       $("#includedFootContent").load("foot.html"); 
     });
     </script> 
+    
+  <script>
+    // Mostrar o botão quando rolar para baixo
+    window.addEventListener('scroll', function () {
+      const botao = document.getElementById('voltarTopo');
+      if (window.scrollY > 100) {
+        botao.style.display = 'block';
+      } else {
+        botao.style.display = 'none';
+      }
+    });
+  </script>
 </head>
 <body>
 
@@ -126,7 +138,12 @@ Pode doar <b>10 reais</b> usando o seguinte link para minha conta do PayPal com 
 <!----------------------------------------------------------------------------->
 
 
+
 </div>
+
+  <button id="voltarTopo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ↑ Topo
+  </button>
 
 <!----------------------------------------------------------------------------->
 <div id="includedFootContent" class="content"> </div>
